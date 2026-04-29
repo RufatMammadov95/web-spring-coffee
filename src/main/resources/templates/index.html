@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Coffee Shop</title>
+</head>
+<body>
+
+	<h1>Coffee Shop</h1>
+
+	<form action="/order" method="post">
+		<label>Select coffee:</label> <select name="coffeeType">
+			<option value="Espresso">Espresso</option>
+			<option value="Latte">Latte</option>
+			<option value="Cappuccino">Cappuccino</option>
+		</select>
+
+		<button type="submit">Order</button>
+	</form>
+
+	<br>
+
+	<a href="/orders">View Orders</a>
+
+</body>
+</html>
